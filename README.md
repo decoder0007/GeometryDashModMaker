@@ -28,6 +28,7 @@ To make your Geometry Dash mod with this you must copy the source code into a fo
 If you download it as of now you will find a simple project that has been setup for you
 
 All you need to worry about is the Main.cpp
+
 ![Here](Images/Main.png)
 
 As you can see in the RunMod() function there is `GDModMaker::HookMenuLayer();`
