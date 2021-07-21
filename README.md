@@ -1,13 +1,13 @@
 # GeometryDashModMaker
 A thing that helps you make mods for Geometry Dash in c++
 
-#Warning
+# Warning
 This is currently in developement and cannot yet be used to do alot ;)
 
-#Installation
+# Installation
 To make your Geometry Dash mod with this you must copy the source code into a folder. There are 2 ways of doing.
 
-##Git Cloning (Recommended)
+## Git Cloning (Recommended)
 
 1. Go ahead and [Download Git](https://git-scm.com/download/win)
 2. Install it
@@ -15,7 +15,7 @@ To make your Geometry Dash mod with this you must copy the source code into a fo
 4. Open a command prompt and cd into that directory (EG. "cd C:\Users\Decoder\Desktop\GDModMaker"
 5. Enter the command `git clone "https://github.com/decoder0007/GeometryDashModMaker.git"`
 
-##Downloading the zip (Not Recommended)
+## Downloading the zip (Not Recommended)
 
 1. Click the green `Code` button
 2. Click download zip
@@ -23,7 +23,7 @@ To make your Geometry Dash mod with this you must copy the source code into a fo
 4. Rename folder to your project name
 5. Move the folder to wherever
 
-##Usage
+## Usage
 
 If you download it as of now you will find a simple project that has been setup for you
 
