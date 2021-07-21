@@ -17,5 +17,5 @@ namespace GDModMaker {
 	Adds a sprite to the Menu Layer
 	Usage: GDModMaker::MenuLayer::AddSprite(X position, Y position, Name of the sprite)
 	X goes from left to right and Y goes from bottom to top.*/
-	static void AddSprite(float x, float y, const char* spriteName, CCLayer* self);
+	void AddSprite(float x, float y, const char* spriteName, CCLayer* self);
 }

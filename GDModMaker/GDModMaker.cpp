@@ -6,8 +6,8 @@
 
 using namespace cocos2d;
 
-void GDModMaker::MenuLayer::AddSprite(float paramX, float paramY, const char* paramSpriteName, CCLayer* self) {
-	CCSprite* sprite = CCSprite::createWithSpriteFrameName(filename);
+void GDModMaker::AddSprite(float x, float y, const char* spriteName, CCLayer* self) {
+	CCSprite* sprite = CCSprite::createWithSpriteFrameName(spriteName);
 	sprite->setPositionX(x);
 	sprite->setPositionY(y);
 
