@@ -16,5 +16,8 @@ void GDModMaker::AddSprite(float x, float y, const char* spriteName, CCLayer* se
 
 void GDModMaker::HookMenuLayer() {
 	size_t base = reinterpret_cast<size_t>(GetModuleHandle(0));
-	MH_CreateHook((PVOID)(base + 0x1907b0), GDModMaker::MenuLayerInitHook, (LPVOID*)&MenuLayerInit);
+	MH_CreateHook(
+		(PVOID)(base + 0x1907b0),
+		GDModMaker::MenuLayerInitHook,
+		(LPVOID*)&MenuLayerInit);
 }
