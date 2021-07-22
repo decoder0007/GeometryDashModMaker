@@ -6,22 +6,28 @@
 
 using namespace cocos2d;
 
-void GDModMaker::FadeOutObject(CCNode* object, int speed) {
-
+void GDModMaker::FadeInObject(CCNode* object, int speed) {
+	object->runAction(CCSequence::create(CCShow::create(), CCFadeIn::create(1.0), NULL));
 }
 
-void GDModMaker::AddSprite(float x, float y, const char* spriteName, CCLayer* self) {
+void GDModMaker::CreateSpriteToLayer(float x, float y, const char* spriteName, CCLayer* self) {
 	CCSprite* sprite = CCSprite::createWithSpriteFrameName(spriteName);
 	sprite->setPositionX(x);
 	sprite->setPositionY(y);
-
 	self->addChild(sprite);
+}
+
+CCSprite* GDModMaker::CreateSprite(float x, float y, const char* spriteName) {
+	CCSprite* sprite = CCSprite::createWithSpriteFrameName(spriteName);
+	sprite->setPositionX(x);
+	sprite->setPositionY(y);
+	return sprite;
 }
 
 void GDModMaker::HookMenuLayer() {
 	size_t base = reinterpret_cast<size_t>(GetModuleHandle(0));
 	MH_CreateHook(
 		(PVOID)(base + 0x1907b0),
-		GDModMaker::MenuLayerInitHook,
-		(LPVOID*)&MenuLayerInit);
+		GDModMaker::MenuLayerCode,
+		(LPVOID*)&Hooks::MenuLayerInit);
 }

@@ -33,12 +33,26 @@ All you need to worry about is the Main.cpp
 
 As you can see in the RunMod() function there is `GDModMaker::HookMenuLayer();`
 This connects your mod to the Main Menu page in the game!
-Above the RunMod() function you will find a large section called `GDModMaker::MenuLayerInitHook()`
-When you run `GDModMaker::HookMenuLayer();` as mentioned before it will run all of the code in the `GDModMaker::MenuLayerInitHook()` function.
+Above the RunMod() function you will find a large section called `GDModMaker::MenuLayerCode()`
+When you run `GDModMaker::HookMenuLayer();` as mentioned before it will run all of the code in the `GDModMaker::MenuLayerCode()` function.
 Under the conveniently labeled `Your code goes here` section, you will find 3 similar lines of code.
-`GDModMaker::AddSprite(100, 100, "difficulty_10_btn2_001.png", self);`
+`GDModMaker::CreateSpriteToLayer(100, 100, "difficulty_10_btn2_001.png", self);`
 This line of code creates a sprite:
 * With an X Position of 100
 * With a Y Position of 100
 * Using the "difficulty_10_btn2_001.png" texture (The extreme demon icon)
-* On the layer self which in `GDModMaker::MenuLayerInitHook()` means the MenuLayer
+* On the layer self which in `GDModMaker::MenuLayerCode()` means the MenuLayer
+
+# Todo
+
+[x] Hooking MenuLayer
+[ ] Hooking PlayLayer
+[ ] Hooking PauseLayer
+[ ] Hooking Literally every other layer
+
+[x] Create Sprite
+[x] Create Sprite to a Layer
+[ ] Fade a node in (WIP)
+[ ] Fade a node out (WIP)
+
+[ ] Other cool functions
