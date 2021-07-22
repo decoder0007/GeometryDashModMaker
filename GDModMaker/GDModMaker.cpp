@@ -6,6 +6,10 @@
 
 using namespace cocos2d;
 
+void GDModMaker::FadeOutObject(CCNode* object, int speed) {
+
+}
+
 void GDModMaker::AddSprite(float x, float y, const char* spriteName, CCLayer* self) {
 	CCSprite* sprite = CCSprite::createWithSpriteFrameName(spriteName);
 	sprite->setPositionX(x);

@@ -1,7 +1,7 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
 #include <cocos2d.h>
-#include "Main.h"
+#include "../Main.h"
 #include "MinHook.h"
 
 DWORD WINAPI my_thread(void* hModule) {
