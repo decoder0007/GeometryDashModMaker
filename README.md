@@ -43,7 +43,7 @@ This line of code creates a sprite:
 * Using the "difficulty_10_btn2_001.png" texture (The extreme demon icon)
 * On the layer self which in `GDModMaker::MenuLayerCode()` means the MenuLayer
 
-# Todo
+# Todo list
 
 [x] Hooking MenuLayer
 [ ] Hooking PlayLayer
